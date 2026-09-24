@@ -11,6 +11,7 @@ coverage/
 *.log
 *.tsbuildinfo
 *.tgz
+*.code-workspace
 
 .vite/
 

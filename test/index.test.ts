@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
 
-import * as tika from "../src/index";
+import { smokeTest } from "../src/index";
 
 describe("package entry point", () => {
-  it("loads as a module", () => {
-    expect(tika).toBeTypeOf("object");
+  it("runs the local package smoke test", () => {
+    expect(smokeTest("portfolio")).toBe("Tika received: portfolio");
   });
 });
